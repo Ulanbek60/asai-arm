@@ -1,0 +1,15 @@
+<odoo>
+  <menuitem id="menu_arm_root" name="АРМ" sequence="10"/>
+
+  <menuitem id="menu_arm_tasks" name="Задания" parent="menu_arm_root" sequence="10"/>
+  <menuitem id="menu_arm_tasks_my" name="Мои задания" parent="menu_arm_tasks" sequence="10" action="action_arm_task_my"/>
+  <menuitem id="menu_arm_tasks_all" name="Все задания" parent="menu_arm_tasks" sequence="20" action="action_arm_task_all"/>
+
+  <menuitem id="menu_arm_refs" name="Справочники" parent="menu_arm_root" sequence="20"/>
+  <menuitem id="menu_arm_scrap_reason" name="Причины брака" parent="menu_arm_refs" action="action_arm_scrap_reason"/>
+  <menuitem id="menu_arm_block_reason" name="Причины невозможности" parent="menu_arm_refs" action="action_arm_block_reason"/>
+
+  <menuitem id="menu_arm_equipment" name="Оборудование" parent="menu_arm_root" sequence="30"/>
+  <menuitem id="menu_arm_workcenters" name="Рабочие зоны" parent="menu_arm_equipment" action="action_arm_workcenter"/>
+  <menuitem id="menu_arm_maintenance" name="Обслуживание" parent="menu_arm_equipment" action="action_arm_maintenance"/>
+</odoo>

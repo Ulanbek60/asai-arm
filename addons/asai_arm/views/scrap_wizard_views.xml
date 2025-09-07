@@ -1,0 +1,19 @@
+<odoo>
+  <record id="view_arm_scrap_wizard_form" model="ir.ui.view">
+    <field name="name">arm.scrap.wizard.form</field>
+    <field name="model">arm.scrap.wizard</field>
+    <field name="arch" type="xml">
+      <form string="Указание брака">
+        <group>
+          <field name="task_id" invisible="1"/>
+          <field name="scrap_reason_id"/>
+          <field name="notes"/>
+        </group>
+        <footer>
+          <button string="Подтвердить" type="object" name="action_confirm" class="btn-primary"/>
+          <button string="Отмена" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+</odoo>

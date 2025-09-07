@@ -1,0 +1,15 @@
+<odoo>
+  <record id="action_arm_task_history" model="ir.actions.act_window">
+    <field name="name">История</field>
+    <field name="res_model">arm.task</field>
+    <field name="view_mode">list,form</field>
+    <field name="domain">[('state','in',('done','scrap'))]</field>
+    <field name="context">{'active_test': False}</field>
+  </record>
+
+  <menuitem id="menu_arm_tasks_history"
+            name="История"
+            parent="menu_arm_tasks"
+            sequence="30"
+            action="action_arm_task_history"/>
+</odoo>

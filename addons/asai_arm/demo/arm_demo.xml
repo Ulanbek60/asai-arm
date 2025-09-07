@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+    <record id="arm_task_demo_1" model="arm.task">
+      <field name="name">Деталь А-001</field>
+      <field name="workcenter_id" ref="asai_arm.wc_cut"/>
+      <field name="priority">2</field>
+      <field name="planned_start">2025-09-01 08:00:00</field>
+    </record>
+    <record id="arm_task_demo_2" model="arm.task">
+      <field name="name">Деталь B-002</field>
+      <field name="workcenter_id" ref="asai_arm.wc_edge"/>
+      <field name="priority">1</field>
+    </record>
+  </data>
+</odoo>
